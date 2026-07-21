@@ -1,33 +1,21 @@
-# EduWing AI Autonomous Robot Project
+# GitHub & Robot SW Version Control
 
-이 프로젝트는 ROS2와 YOLOv8 기반의 AI 자율주행 모바일 로봇 시스템 제어 코드 저장소입니다.
+Git/GitHub을 활용한 로봇 소프트웨어 버전 관리, 협업, 프로젝트 코드 아카이빙을 실습하는 에듀윙 로보틱스 교육 과정의 실습용 저장소입니다.
 
-## 개발 환경 (Environment)
-- **OS:** Ubuntu 24.04 LTS
-- **Framework:** Jazzy
-- **Hardware:** TurtleBot3 (Raspberry Pi 4)
+전체 커리큘럼은 [에듀윙 로보틱스 홈페이지](https://eduwingrobotics.com)에서 확인하실 수 있습니다.
 
-## 필수 설치 요소 (Prerequisites)
-로봇을 구동하기 전 아래 패키지들을 먼저 설치해 주세요.
-```bash
-sudo apt update
-sudo apt install ros-$ROS_DISTRO-turtlebot3-navigation2
-# 기타 필요한 의존성 패키지 기술
-```
+## 이 저장소의 용도
 
-## 실행 방법 (Quick Start)
+로봇 프로젝트를 가정한 예제 파일(`robot_drive.py`, `robot_config.py`, `lidar_control.py` 등)로 아래 실습을 진행합니다.
 
-이 저장소를 복제(Clone)한 뒤, 아래 명령어를 순서대로 터미널에 입력하여 로봇 노드를 구동하세요.
+- Clone / Fetch / Pull
+- Commit 컨벤션 (Feat / Fix / Docs / Chore)
+- Branch 생성 및 Merge
+- Merge Conflict 해결
+- 파일 이름 변경, 불필요한 파일 정리
 
-```bash
-# 1. 로봇 워크스페이스 폴더로 이동
-cd github-robot-sw-version-control
+커밋 히스토리 자체가 실습 기록이므로, `git log`로 진행 과정을 따라가 볼 수 있습니다.
 
-# 2. 로봇 소스코드 빌드 (ROS2 전용 빌드 명령어)
-colcon build --symlink-install
+## 사전 준비
 
-# 3. 빌드된 실행 환경을 현재 터미널에 로드
-source install/setup.bash
-
-# 4. AI 자율주행 모바일 로봇 노드 실행!
-ros2 run robot_drive drive_node
+- Git, GitHub 계정
