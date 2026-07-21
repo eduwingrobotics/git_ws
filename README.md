@@ -21,7 +21,7 @@ sudo apt install ros-$ROS_DISTRO-turtlebot3-navigation2
 
 ```bash
 # 1. 로봇 워크스페이스 폴더로 이동
-cd ~/clone_test/git_ws
+cd github-robot-sw-version-control
 
 # 2. 로봇 소스코드 빌드 (ROS2 전용 빌드 명령어)
 colcon build --symlink-install
